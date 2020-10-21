@@ -18,7 +18,14 @@ class SearchBar extends React.Component {
         this.handleTermChange = this.handleTermChange.bind(this);
         this.handleSearch = this.handleSearch.bind(this);
     }
-
+    componentDidMount() {
+        const button = document.getElementsByClassName('SearchBar-submit')[0];
+        window.addEventListener("keyup", (event) => {
+            if (event.keyCode === 13) {
+                button.click();
+            }
+        });
+    }
     getSortByClass(sortByOption) {
         if (this.state.sortBy === sortByOption) {
             return 'active';
