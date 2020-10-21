@@ -1,53 +1,88 @@
 .Business {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 16.66rem;
-    margin: 0 .5rem 2.3rem .5rem;
-  }
-  
-  .Business .image-container {
-    height: 16.66rem;
-    margin-bottom: 1rem;
-  }
-  
-  .Business h2 {
-    margin-bottom: .5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  
-  .Business-information {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .Business-information p {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1rem;
-  }
-  
-  .Business-address {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #335c67;
-  }
-  
-  .Business-reviews {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: right;
-  }
-  
-  .Business-reviews h3 {
-    color: #e5383b;
-    font-weight: 600;
-  }
-  
-  .Business-reviews .rating {
-    font-size: 1rem;
-    line-height: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16.66rem;
+  margin: 0 .5rem 2.3rem .5rem;
+}
+
+.Business .image-container {
+  height: 16.66rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+.imgDescription {
+  height: 16.66rem;
+  width: 16.66rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  color: white;
+  font-size: 1.5rem;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.imgDescription p {
+  text-align: center;
+}
+
+.imgDescription p:hover {
+  transform: scale(1.15);
+}
+
+.imgDescription:hover {
+  transition-duration: 0.2s;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.Business h2 {
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.Business-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Business-information p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.Business-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #335c67;
+}
+
+.Business-address:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.Business-reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.Business-reviews h3 {
+  color: #e5383b;
+  font-weight: 600;
+}
+
+.Business-reviews .rating {
+  font-size: 1rem;
+  line-height: 1rem;
+}
